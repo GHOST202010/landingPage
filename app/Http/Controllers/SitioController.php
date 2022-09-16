@@ -39,7 +39,7 @@ class SitioController extends Controller
             'correo' => $request->email,
             'comentario' => $request->description,
             "created_at" =>  \Carbon\Carbon::now(),
-            "updated_at" => \Carbon\Carbon::now(),
+            "updated_at" => \Carbon\Carbon::now()->timezone(''),
         ]);
         return redirect('/landingpage');
     }

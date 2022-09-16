@@ -94,8 +94,10 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Cosas curiosas</h3>
-                        <p class="text-muted mb-0">Curiosamente también me gusta hacer ejercicio algo que normalmente no ocurre con el estereotipo que se tiene de un "informatico".</p>
+                        <h3 class="h4 mb-2">Hobbies</h3>
+                        <p class="text-muted mb-0">El más destacado que tengo es escuchar música. Tiempo atras tomaba clases de música, y además estába en un mariachi.
+                            <br> Lo curioso es que la música que más escucho no es la de mariachi, aunque charo que si me gusta.
+                        </p>
                     </div>
                 </div>
             </div>

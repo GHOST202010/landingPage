@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -17,7 +17,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="/contact/css/style.css">
 
-    <title>Contact Form #1</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -34,29 +34,38 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7 mb-5 mb-lg-0">
 
-                            <h2 class="mb-5">Fill the form. <br> It's easy.</h2>
+                            <h2 class="mb-5">Contacto</h2>
 
-                            <form class="border-right pr-5 mb-5" action="" method="post" id="contactForm" name="contactForm">
-
+                            <form class="border-right pr-5 mb-5" action="/recibe-form-contacto" method="POST" id="contactForm" name="contactForm">
+                                @csrf
                                 <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" class="form-control" value="{{ $name ?? '' }}" name="fname" id="fname" placeholder="First name">
+                                    <div class="col-md-12 form-group">
+                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre">
+                                        @error('name')
+                                        <i>{{$message}}</i>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" value="{{ $email ?? '' }}" name="email" id="email" placeholder="Email">
+                                        <input type="text" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo">
+                                        @error('email')
+                                        <i>{{$message}}</i>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message">{{ $description ?? '' }}</textarea>
+                                        <textarea class="form-control" name="description" id="message" cols="30" rows="7" placeholder="Comentarios">{{ old('description') ?? ($description ?? '')}}</textarea>
+                                        @error('description')
+                                        <i>{{$message}}</i>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                                        <input type="submit" value="Enviar mensaje" class="btn btn-primary rounded-0 py-2 px-4">
                                         <span class="submitting"></span>
                                     </div>
                                 </div>
@@ -69,9 +78,9 @@
 
                         </div>
                         <div class="col-lg-4 ml-auto">
-                            <h3 class="mb-4">Let's talk about everything.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deleniti itaque similique magni. Magni, laboriosam perferendis maxime!</p>
-                            <p><a href="#">Read more</a></p>
+                            <h3 class="mb-4">Genial</h3>
+                            <p>Ya está a solo un paso para contactarme y muy pronto podremos trabjar juntos. Gracias por tu preferencia</p>
+                            <a href="/landingpage">Inicio</a>
                         </div>
                     </div>
                 </div>

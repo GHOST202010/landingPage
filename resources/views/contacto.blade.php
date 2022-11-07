@@ -40,26 +40,26 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre">
+                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre" required>
                                         @error('name')
-                                        <i>{{$message}}</i>
+                                        <i>Por favor ingrese un nombre</i>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo">
+                                        <input type="email" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo" required>
                                         @error('email')
-                                        <i>{{$message}}</i>
+                                        <i>Por favor ingrese un correo válido</i>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <textarea class="form-control" name="description" id="message" cols="30" rows="7" placeholder="Comentarios">{{ old('description') ?? ($description ?? '')}}</textarea>
+                                        <textarea class="form-control" name="description" id="message" cols="30" rows="7" placeholder="Comentarios" required>{{ old('description') ?? ($description ?? '')}}</textarea>
                                         @error('description')
-                                        <i>{{$message}}</i>
+                                        <i>Por favor ingrese una descripción</i>
                                         @enderror
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                         <div class="col-lg-4 ml-auto">
                             <h3 class="mb-4">Genial</h3>
                             <p>Ya está a solo un paso para contactarme y muy pronto podremos trabjar juntos. Gracias por tu preferencia</p>
-                            <a href="/landingpage">Inicio</a>
+                            <a href="/landingpage">Regresar al inicio</a>
                         </div>
                     </div>
                 </div>

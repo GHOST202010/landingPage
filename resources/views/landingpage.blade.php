@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Landing</title>
+    <title>landingpage</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="landing/assets/favicon.ico" />
     <!-- Bootstrap Icons-->
@@ -30,8 +30,7 @@
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">Carrera</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contacto">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +87,7 @@
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Objetivos</h3>
-                        <p class="text-muted mb-0">Uno de mis objetivos es lograr aprender seguridad informática por lo que algunas veces investigo un poco sobre com aprender, que claro no es un camino fácil pero por algo se empieza.</p>
+                        <p class="text-muted mb-0">Uno de mis objetivos es lograr aprender seguridad informática por lo que algunas veces investigo un poco sobre cómo aprender, que claro no es un camino fácil pero por algo se empieza.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -96,74 +95,14 @@
                         <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Hobbies</h3>
                         <p class="text-muted mb-0">El más destacado que tengo es escuchar música. Tiempo atras tomaba clases de música, y además estába en un mariachi.
-                            <br> Lo curioso es que la música que más escucho no es la de mariachi, aunque charo que si me gusta.
+                            <br> Lo curioso es que la música que más escucho no es la de mariachi, aunque claro que si me gusta.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Portfolio-->
-    <div id="portfolio">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="landing/assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                        <img class="img-fluid" src="landing/assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Footer-->
     <footer class="bg-light py-5">

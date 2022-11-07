@@ -21,10 +21,10 @@ $(function() {
 					}
 				},
 				messages: {
-					fname: "Please enter your first name",
-					lname: "Please enter your last name",
-					email: "Please enter a valid email address",
-					message: "Please enter a message"
+					fname: "Por favor ingrese su nombre",
+					lname: "Por favor ingrese su nombre",
+					email: "Por favor ingrese un correo válido",
+					message: "Por favor ingrese un mensaje"
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		

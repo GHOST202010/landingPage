@@ -19,7 +19,7 @@ class SitioController extends Controller
             $name = "Jake";
             $lastName = "Smith";
             $email = "Jake@hotmail.com";
-            $description = "Probando los parametros que se necesitan";
+            $description = "Hola que tal, espero te encuentres bien. Estoy interesado en contactarte.";
             return view('contacto', compact('name', 'lastName', 'email', 'description'));
         }
 
@@ -29,17 +29,15 @@ class SitioController extends Controller
     public function recibeFormContacto(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'description' => 'required',
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'description' => 'required|string|max:65535',
         ]);
 
-        DB::table('contactos')->insert([
-            'nombre' => $request->name,
-            'correo' => $request->email,
-            'comentario' => $request->description,
-            "created_at" =>  \Carbon\Carbon::now(),
-            "updated_at" => \Carbon\Carbon::now()->timezone(''),
+        DB::table('contact')->insert([
+            'name' => $request->name,
+            'email' => $request->email,
+            'description' => $request->description,
         ]);
         return redirect('/landingpage');
     }

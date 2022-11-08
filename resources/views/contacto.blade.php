@@ -36,30 +36,33 @@
 
                             <h2 class="mb-5">Contacto</h2>
 
-                            <form class="border-right pr-5 mb-5" action="/recibe-form-contacto" method="POST" id="contactForm" name="contactForm">
+                            <form class="border-right pr-5 mb-5" action="/contacto" method="POST" id="contactForm" name="contactForm">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre" required>
+                                        <label for="name">Nombre</label>
+                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre" >
                                         @error('name')
-                                        <i>Por favor ingrese un nombre</i>
+                                        <i>{{$message}}</i>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="email" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo" required>
+                                        <label for="email">Correo</label>
+                                        <input type="email" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo" >
                                         @error('email')
-                                        <i>Por favor ingrese un correo válido</i>
+                                        <i>{{$message}}</i>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <textarea class="form-control" name="description" id="message" cols="30" rows="7" placeholder="Comentarios" required>{{ old('description') ?? ($description ?? '')}}</textarea>
+                                        <label for="message">Descripción</label>
+                                        <textarea class="form-control" name="description" id="mesdesage" cols="30" rows="7" placeholder="Comentarios" >{{ old('description') ?? ($description ?? '')}}</textarea>
                                         @error('description')
-                                        <i>Por favor ingrese una descripción</i>
+                                        <i>{{$message}}</i>
                                         @enderror
                                     </div>
                                 </div>

@@ -16,11 +16,10 @@ class SitioController extends Controller
     public function contacto($codigo = null)
     {
         if (!empty($codigo) && $codigo == "1234") {
-            $name = "Jake";
-            $lastName = "Smith";
+            $name = "Jake Smith";
             $email = "Jake@hotmail.com";
             $description = "Hola que tal, espero te encuentres bien. Estoy interesado en contactarte.";
-            return view('contacto', compact('name', 'lastName', 'email', 'description'));
+            return view('contacto', compact('name', 'email', 'description'));
         }
 
         return view('contacto');

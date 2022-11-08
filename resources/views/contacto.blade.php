@@ -40,18 +40,18 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <label for="name">Nombre</label>
-                                        <input type="text" class="form-control" value="{{ old('name') ?? ($name ?? '') }}" name="name" id="fname" placeholder="Nombre" >
-                                        @error('name')
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" value="{{ old('nombre') ?? ($nombre ?? '') }}" name="nombre" id="nombre" placeholder="Nombre" >
+                                        @error('nombre')
                                         <i>{{$message}}</i>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <label for="email">Correo</label>
-                                        <input type="email" class="form-control" value="{{ old('email') ?? ($email ?? '') }}" name="email" id="email" placeholder="Correo" >
-                                        @error('email')
+                                        <label for="correo">Correo</label>
+                                        <input type="email" class="form-control" value="{{ old('correo') ?? ($correo ?? '') }}" name="correo" id="correo" placeholder="Correo" >
+                                        @error('correo')
                                         <i>{{$message}}</i>
                                         @enderror
                                     </div>
@@ -59,9 +59,9 @@
 
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <label for="message">Descripción</label>
-                                        <textarea class="form-control" name="description" id="mesdesage" cols="30" rows="7" placeholder="Comentarios" >{{ old('description') ?? ($description ?? '')}}</textarea>
-                                        @error('description')
+                                        <label for="comentario">Comentario</label>
+                                        <textarea class="form-control" name="comentario" id="comentario" cols="30" rows="7" placeholder="Comentarios" >{{ old('comentario') ?? ($comentario ?? '')}}</textarea>
+                                        @error('comentario')
                                         <i>{{$message}}</i>
                                         @enderror
                                     </div>
@@ -73,12 +73,6 @@
                                     </div>
                                 </div>
                             </form>
-
-                            <div id="form-message-warning mt-4"></div>
-                            <div id="form-message-success">
-                                Your message was sent, thank you!
-                            </div>
-
                         </div>
                         <div class="col-lg-4 ml-auto">
                             <h3 class="mb-4">Genial</h3>
